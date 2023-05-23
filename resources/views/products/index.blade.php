@@ -56,14 +56,12 @@
         </div>
     </div>
 @endsection
-
 @section('javascript')
     const deleteUrl = "{{ url('products') }}/";
-    const confirmDelete = "{{ __('shop.messages.delete_confirm') }}";
+    const confirmDelete = "{{ __('shop.messages.delete_confirm') }}/";
 @endsection
+
 
 @section('js-files')
     <script src="{{ asset('js/delete.js') }}"></script>
 @endsection
-
-
