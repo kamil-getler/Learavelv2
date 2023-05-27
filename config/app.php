@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'locale' => env (key:'ASSET_URL',default: 'en'),
+    'locale' => env (key:'APP_LOCALE',default: 'en'),
 
     /*
     |--------------------------------------------------------------------------
