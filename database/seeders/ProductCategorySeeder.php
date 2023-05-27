@@ -2,21 +2,24 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Seeders\ProductCategory;
 use Illuminate\Database\Seeder;
+
+
 
 class ProductCategorySeeder extends Seeder
 {
     /**
      * Run the database seeds.
      */
-    public function run()
+
+        public function run()
     {
         $data = [
             ['name' => 'Odzież'],
             ['name' => 'Akcesoria']
         ];
-        ProductCategory::insert($data);
+        \App\Models\ProductCategory::insert($data);
     }
 
 }
