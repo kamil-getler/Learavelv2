@@ -1,5 +1,8 @@
+//import './bootstrap';
+//window.$ = window.jQuery = require('jquery');
+//window.$ = window.jQuery = $;
 import './bootstrap';
-window.$ = window.jQuery = require('jquery');
+import $ from 'jquery';
 window.$ = window.jQuery = $;
 import './delete';
 import './welcome';
