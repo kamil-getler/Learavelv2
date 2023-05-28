@@ -20,6 +20,7 @@
                     <th scope="col">#</th>
                     <th scope="col">Ilość</th>
                     <th scope="col">Cena [PLN]</th>
+                    <th scope="col">Status zamówienia</th>
                     <th scope="col">Produkty</th>
                 </tr>
                 </thead>
@@ -30,6 +31,7 @@
                         <td>{{ $order->quantity }}</td>
                         <td>{{ $order->price }}</td>
                         <td>
+
                             <ul>
                                 @foreach($order->products as $product)
                                     <li>{{ $product->name }} - {{ $product->description }}</li>
