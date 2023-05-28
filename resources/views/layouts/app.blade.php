@@ -60,7 +60,7 @@
                                     <a class="dropdown-item" href="/users/list">Użytkownicy</a>
                                     <a class="dropdown-item" href="{{ route('products.index') }}">Produkty</a>
                                 @endcan
-
+                                    <a class="dropdown-item" href="{{ route('orders.index') }}">Zamówienia</a>
                                 <a class="dropdown-item" href="{{ route('cart.index') }}">Koszyk</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();

@@ -17,6 +17,8 @@
                     <div class="col-lg-10 offset-lg-1">
                         <div class="cart_container">
                             <div class="cart_title">Koszyk<small> ({{ $cart->getItems()->count() }}) </small></div>
+                            <form action="{{ route('orders.store') }}" method="POST" id="order-form">
+                                @csrf
                             <div class="cart_items">
                                 <ul class="cart_list">
                                     @foreach($cart->getItems() as $item)
@@ -57,8 +59,9 @@
                             </div>
                             <div class="cart_buttons">
                                 <a href="/" class="button cart_button_clear">Wróć do sklepu</a>
-                                <button type="button" class="button cart_button_checkout" disabled>Zapłać</button>
+                                <button type="submit" class="button cart_button_checkout" >Zapłać</button>
                             </div>
+                            </form>
                         </div>
                     </div>
                 </div>

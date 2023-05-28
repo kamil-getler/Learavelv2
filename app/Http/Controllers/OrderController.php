@@ -21,7 +21,7 @@ class OrderController extends Controller
     public function index(): View
     {
         return view("orders.index", [
-            'orders' => Order::where('user_id', Auth::id())->paginate(10)
+            'orders' => Order::paginate(10)
         ]);
     }
 
